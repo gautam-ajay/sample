@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DIGITAL WORDS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1>DIGITAL WORDS</h1>
+  </header>
+  <main>
+    <div id="filter">
+  <button class="tag-button selected" data-tag="all" onclick="filterByTag('all', this)">All</button>
+  <button class="tag-button" data-tag="food" onclick="filterByTag('food', this)">Food</button>
+  <button class="tag-button" data-tag="thoughts" onclick="filterByTag('thoughts', this)">Thoughts</button>
+  <button class="tag-button" data-tag="tweets" onclick="filterByTag('tweets', this)">Tweets</button>
+</div>
+
+    <h2>Recent Posts</h2>
+    <ul id="post-list">
+      
+      <li data-tags="food">
+        <a href="posts/post1.html">Post test</a> - May 1, 2023
+      </li>
+      <li data-tags="tweets">
+        <a href="posts/post1.html">Post test</a> - May 1, 2023
+      </li>
+      <li data-tags="thoughts">
+        <a href="post2.html">Post 2</a> - April 28, 2023
+        <span class="tag">thoughts</span>
+      </li>
+      <li data-tags="food thoughts">
+        <a href="post3.html">Post 3</a> - April 25, 2023
+        <span class="tag">food</span>
+        <span class="tag">thoughts</span>
+      </li>
+    </ul>
+    
+  </main>
+  <script src="filter.js"></script>
+</body>
+</html>

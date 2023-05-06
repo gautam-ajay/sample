@@ -1,0 +1,99 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Mono', monospace;
+
+}
+
+ul
+{
+  list-style: none;
+}
+}
+
+body {
+  background-color: #e6e3d3;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e6e3d3;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul.menu {
+  display: flex;
+}
+
+nav ul.menu li {
+  margin-left: 30px;
+}
+
+nav ul.menu li:first-child {
+  margin-left: 0;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav ul.menu li a:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hero Banner Styles */
+.hero {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e3d3;
+
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 2rem;
+  color: black;
+}
+
